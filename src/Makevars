@@ -9,3 +9,7 @@ $(OBJECTS): snap/snap-core/libsnap.a
 
 snap/snap-core/libsnap.a:
 	$(MAKE) -C snap/snap-core lib CC="$(CC)" CXX="$(CXX)" AR="$(AR)" ARFLAGS=$(ARFLAGS)
+
+clean:
+	$(MAKE) -C snap clean
+	rm -f $(OBJECTS)
