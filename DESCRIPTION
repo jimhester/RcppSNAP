@@ -14,3 +14,4 @@ Authors@R: c(
     person(family = "Stanford SNAP", role = "ctb", comment = "http://snap.stanford.edu")
     )
 RoxygenNote: 6.0.1.9000
+SystemRequirements: GNU make
