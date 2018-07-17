@@ -20,9 +20,9 @@ template <class PGraph> double GetNodeClustCf(const PGraph& Graph, const int& NI
 template <class PGraph> void GetNodeClustCf(const PGraph& Graph, TIntFltH& NIdCCfH);
 
 /// Returns the number of triangles in a graph. ##TSnap::GetTriads
-template <class PGraph> int64 GetTriads(const PGraph& Graph, int SampleNodes=-1);
+template <class PGraph> int64 GetTriads(const PGraph& Graph, int SampleNodes);
 /// Computes the number of Closed and Open triads. ##TSnap::GetTriads1
-template <class PGraph> int64 GetTriads(const PGraph& Graph, int64& ClosedTriadsX, int64& OpenTriadsX, int SampleNodes=-1);
+template <class PGraph> int64 GetTriads(const PGraph& Graph, int64& ClosedTriadsX, int64& OpenTriadsX, int SampleNodes);
 /// Computes the number of Closed and Open triads. ##TSnap::GetTriadsAll
 template <class PGraph> int64 GetTriadsAll(const PGraph& Graph, int64& ClosedTriadsX, int64& OpenTriadsX, int SampleNodes=-1);
 /// Computes the number of open and close triads for every node of the network. ##TSnap::GetTriads2
@@ -904,4 +904,3 @@ void TNetConstraint<PGraph>::Test() {
 }
 
 #endif // TRIAD_H
-
