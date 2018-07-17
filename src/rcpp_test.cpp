@@ -1,9 +1,9 @@
-#include <RcppSNAP.h>
+#include <Snap.h>
 
 // [[Rcpp::export]]
 int DefaultConstructor() {
   PNEANet Graph;
-  
+
   Graph = TNEANet::New();
   Graph->AddNode(1);
   Graph->AddNode(2);
